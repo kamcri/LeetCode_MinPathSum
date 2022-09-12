@@ -48,7 +48,7 @@ public class App
         }
 
         //starting at grid[1][1],check the path above or to the left and add the smaller one to the grid
-        //the bottom left grid will have the min path as its new path
+        //the bottom left grid will have the min path as its new value
         for(int i = 1; i < grid.length; i++){
             for(int j = 1 ; j < grid[0].length; j++){
                 grid[i][j] = Math.min(grid[i-1][j], grid[i][j-1]) + grid[i][j];
